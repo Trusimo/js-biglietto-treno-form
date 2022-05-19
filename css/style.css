@@ -1,0 +1,57 @@
+body {
+    background-color: #b91450;
+}
+
+.color-white {
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+
+.bg-white {
+    background-color: white;
+    margin-top: 20px;
+    padding: 80px 30px;
+    text-align: center;
+    color: #b91450;
+}
+
+.bg-2 {
+    background-color: white;
+    padding: 80px 30px;
+}
+
+#submit-btn {
+    background-color: lightgray;
+    color: #b91450;
+    font-weight: bold;
+    border: 1px solid rgb(66, 66, 66);
+    border-radius: 5px;
+    padding: 6px 10px;
+    margin-top: 20px;
+}
+
+#submit-btn:hover {
+    background-color: rgb(119, 119, 119);
+}
+
+#submit-btn:active {
+    background-color: rgb(61, 61, 61);
+    color: white;
+}
+
+#nome-passeggero {
+    background-color: grey;
+    padding: 20px;
+}
+
+.dsp-flex {
+    display: flex;
+}
+
+.dati-biglietto {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}

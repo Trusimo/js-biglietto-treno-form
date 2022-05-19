@@ -5,20 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto Treno</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <ul>
-        <li>
-            <span>Età: </span><span id="userage""></span>
-        </li>
-        <li>
-            <span>Kilometri: </span><span id="userkm""></span>
-        </li>
-        <li>
-            <span>Prezzo: </span><span id="userprice""></span><span> euro</span>
-        </li>
-    </ul>
-    
+        <h1 class="color-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <div class="container bg-white">
+            <div class="row">
+                <div class="col-4">
+                    Nome e Cognome
+                </div>
+                <div class="col-4">
+                    Chilometri da percorrere
+                </div>
+                <div class="col-4">
+                    Età
+                </div>
+                <div class="col-4">
+                    <input type="text" name="Nome" id="username">
+                </div>
+                <div class="col-4">
+                    <input type="text" name="Km" id="userkm">
+                </div>
+                <div class="col-4">
+                    <input type="text" name="Eta" id="userage">
+                </div>
+            </div>
+            <input id="submit-btn" type="button" value="Genera">
+            <input id="submit-btn" type="button" value="Annulla">
+        </div>
+
+        <h1 class="color-white">IL TUO BIGLIETTO</h1>
+        <div class="container bg-2">
+            <h2>DETTAGLIO PASSEGGERO</h2>
+            <div class="dsp-flex">
+                <div id="nome-passeggero">
+                    <h3>NOME PASSEGGERO</h3>
+                    <div id="nome">
+
+                    </div>
+                </div>
+                <div class="dati-biglietto">
+                    <span>Offerta</span>
+                    <span>Carrozza</span>
+                    <span>Codice CP</span>
+                    <span>Prezzo</span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span id="prezzo"></span>
+                </div>
+            </div>
+        </div>
+
     <script src="main.js"></script>
 </body>
 </html>
