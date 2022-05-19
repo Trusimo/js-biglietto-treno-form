@@ -12,5 +12,5 @@ submit.addEventListener("click", function() {
     } else {
         var prezzo = 0.21 * (chilometri);
     }
-    document.getElementById("nome-passeggero").innerHTML = (nome)
+    document.getElementById("nome").innerHTML = (nome)
 })
