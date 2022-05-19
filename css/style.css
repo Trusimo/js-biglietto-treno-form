@@ -33,6 +33,7 @@ body {
 
 #submit-btn:hover {
     background-color: rgb(119, 119, 119);
+    color: #e5a9bf;
 }
 
 #submit-btn:active {
