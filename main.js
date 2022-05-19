@@ -2,7 +2,7 @@ var nome = document.getElementById("username").value;
 var eta = document.getElementById("userage").value;
 var chilometri = document.getElementById("userkm").value;
 
-const submit = document.getElementById(submit-btn);
+var submit = document.getElementById("submit-btn");
 
 submit.addEventListener("click", function() {
     if (eta < 17) {
@@ -12,5 +12,5 @@ submit.addEventListener("click", function() {
     } else {
         var prezzo = 0.21 * (chilometri);
     }
-    document.getElementById("nome").innerHTML = (nome)
+    document.getElementById("nome").innerHTML = (nome);
 })
