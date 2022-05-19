@@ -40,18 +40,10 @@ body {
     color: white;
 }
 
-#nome-passeggero {
+.bg-grey {
     background-color: grey;
-    padding: 20px;
 }
 
-.dsp-flex {
-    display: flex;
-}
-
-.dati-biglietto {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    flex-wrap: wrap;
+.font-black {
+    font-weight: bold;
 }

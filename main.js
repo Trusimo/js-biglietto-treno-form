@@ -13,4 +13,5 @@ submit.addEventListener("click", function() {
         var prezzo = 0.21 * (chilometri);
     }
     document.getElementById("nome").innerHTML = (nome);
+    document.getElementById("prezzo").innerHTML = (prezzo);
 })
