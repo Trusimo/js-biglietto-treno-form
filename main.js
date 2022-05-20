@@ -8,7 +8,15 @@ submit.addEventListener("click", function() {
     var carrozza = Math.floor(Math.random() * 11);
     var numerobiglietto = Math.floor(Math.random() * 101);
 
-    if (eta < 17) {
+    if (chilometri > 200 || chilometri < 10) {
+        alert ("Non esistono tratte per il chilometraggio selezionato")
+    }
+
+    if (eta < 14) {
+        alert ("Obbligatorio farsi accompagnare da qualcuno")
+    }
+
+    if (eta < 18) {
         var prezzo = 0.168 * (chilometri);
     } else if (eta > 65) {
         var prezzo = 0.126 * (chilometri);
