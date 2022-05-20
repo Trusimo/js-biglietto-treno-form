@@ -8,12 +8,16 @@ submit.addEventListener("click", function() {
     var carrozza = Math.floor(Math.random() * 11);
     var numerobiglietto = Math.floor(Math.random() * 101);
 
+    if (isNaN(eta) || isNaN(chilometri)) {
+        alert("Inserire dati validi")
+    }
+
     if (chilometri > 200 || chilometri < 10) {
         alert ("Non esistono tratte per il chilometraggio selezionato")
     }
 
     if (eta < 14) {
-        alert ("Obbligatorio farsi accompagnare da qualcuno")
+        alert ("Non puoi viaggiare da solo")
     }
 
     if (eta < 18) {
@@ -28,4 +32,13 @@ submit.addEventListener("click", function() {
     document.getElementById("prezzo").innerHTML = (prezzo).toFixed(2);
     document.getElementById("carrozza").innerHTML = (carrozza);
     document.getElementById("numerobiglietto").innerHTML = (numerobiglietto)
+})
+
+const reset = document.getElementById("reset-btn");
+
+reset.addEventListener('click', function() {
+    document.getElementById("nome").innerHTML = "";
+    document.getElementById("prezzo").innerHTML = "";
+    document.getElementById("carrozza").innerHTML = "";
+    document.getElementById("numerobiglietto").innerHTML = "";
 })

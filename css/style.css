@@ -41,6 +41,26 @@ body {
     color: white;
 }
 
+#reset-btn {
+    background-color: lightgray;
+    color: #b91450;
+    font-weight: bold;
+    border: 1px solid rgb(66, 66, 66);
+    border-radius: 5px;
+    padding: 6px 10px;
+    margin-top: 20px;
+}
+
+#reset-btn:hover {
+    background-color: rgb(119, 119, 119);
+    color: #e5a9bf;
+}
+
+#reset-btn:active {
+    background-color: rgb(61, 61, 61);
+    color: white;
+}
+
 .bg-grey {
     background-color: grey;
 }
