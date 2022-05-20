@@ -63,6 +63,7 @@ body {
 
 .bg-grey {
     background-color: grey;
+    height: 100px;
 }
 
 .font-black {
